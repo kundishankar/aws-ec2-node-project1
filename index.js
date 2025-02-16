@@ -16,6 +16,15 @@ app.get('/api/user', (req, res) => {
     });
 });
 
+//dummy api
+app.get('/api/product', () => {
+    res.json({
+        id: 1,
+        name: 'Aws EC2 Online Test',
+        Price: 499
+    })
+})
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
